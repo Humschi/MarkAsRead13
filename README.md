@@ -1,8 +1,9 @@
-MarkAsRead7
+MarkAsRead13
 ===========
 
-Remove icon's badge when clear section in Notification Center (iOS 7).
+Remove icon's badge by clearing a notification.
+Tested on iOS 12.4 and 13.2.2. No options to configure
+
 
 iOS 6 version here: https://github.com/orikad/Mark-as-Read-for-NC 
-
-[Donations are always appreciate :)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=AWMGQ3PNC8YY4)
+iOS 7/8 version here: https://github.com/pigigaldi/MarkAsRead7
