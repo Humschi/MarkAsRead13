@@ -1,17 +1,13 @@
-ARCHS = armv7 armv7s arm64
+INSTALL_TARGET_PROCESSES = SpringBoard
 
-TARGET = iphone:clang:latest:5.0
+include $(THEOS)/makefiles/common.mk
 
-THEOS_BUILD_DIR = Packages
+TWEAK_NAME = MarkAsRead13
 
-include theos/makefiles/common.mk
-
-TWEAK_NAME = MarkAsRead7
-MarkAsRead7_CFLAGS = -fobjc-arc
-MarkAsRead7_FILES = MarkAsRead7.xm
-MarkAsRead7_FRAMEWORKS = Foundation UIKit
+MarkAsRead13_FILES = Tweak.x
+MarkAsRead13_CFLAGS = -fobjc-arc
 
 include $(THEOS_MAKE_PATH)/tweak.mk
 
 after-install::
-	install.exec "killall -9 backboardd"
+			install.exec "killall -9 SpringBoard"
