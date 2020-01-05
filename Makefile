@@ -2,6 +2,8 @@ INSTALL_TARGET_PROCESSES = SpringBoard
 
 include $(THEOS)/makefiles/common.mk
 
+ARCHS = armv7 armv7s arm64
+
 TWEAK_NAME = MarkAsRead13
 
 MarkAsRead13_FILES = Tweak.x
